@@ -1,0 +1,55 @@
+body{
+  padding: 0;
+  margin: 0;
+}
+
+.header{
+  height: 200px;
+  .header-top{
+    height: 40px;
+    background-color: #040000;
+    color: white;
+    line-height: 40px;
+    font-weight: bold;
+    .header-top_text{
+      float: right;
+      margin-right: 50px;
+    }
+  }
+  .header-main{
+    height: 200px;
+    background-color: white!important;
+    display: flex;
+    
+    img{
+      height: 200px;
+      margin-left: 100px;
+    }
+    .header-main_content{
+      line-height: 300px;
+      position: absolute;
+      right: 120px;
+    }
+
+  }
+}
+.main{
+  padding-top: 20px;
+  img{
+    height: 600px;
+    width: 100%;
+  }
+  .main-text{
+    position: absolute;
+    top:300px;
+    left: 300px;
+    font-size: 30px;
+    line-height: 60px;
+    font-weight: bold;
+    color: white;
+    font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+    li{
+      list-style: none;
+    }
+  }
+}
