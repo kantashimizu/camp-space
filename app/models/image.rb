@@ -1,3 +1,3 @@
 class Image < ApplicationRecord
-  has_many :areas,optional: true
+  has_many :areas
 end
