@@ -8,12 +8,15 @@ body{
   .header-top{
     height: 40px;
     background-color: #040000;
-    color: white;
     line-height: 40px;
-    font-weight: bold;
     .header-top_text{
       float: right;
       margin-right: 50px;
+      a{
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+      }
     }
   }
   .header-main{

@@ -1,24 +1,72 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## usersテーブル
 
-Things you may want to cover:
+|Column|Type|Options|
+|------|----|-------|
+|family_name_ktn|string|null: false|
+|family_name_knj|string|null: false|
+|name_ktn|string|null: false|
+|name_knj|string|null: false|
+|email|string|null: false|
+|tel|string|null: false|
+|password|string|null: false|
 
-* Ruby version
+### Association
+- has_many :masters
+- has_many :areas, through: :masters
+- has_many :items, through: :masters
 
-* System dependencies
+## areasテーブル
+|Column|Type|Options|
+|------|----|-------|
+|address|string|null: false|
+|name|string|null: false|
+|tel|string|
+|text|string|null: false|
 
-* Configuration
+- has_many :masters
+- has_many :users, through: :masters
+- has_many :items, through: :masters
 
-* Database creation
 
-* Database initialization
+## itemsテーブル
+|Column|Type|Options|
+|------|----|-------|
+|price|intger|null: false|
+|name||null: false|
+|sub_item|references|null: false, foreign_key: true|
 
-* How to run the test suite
+- has_many :masters
+- has_many :users, through: :masters
+- has_many :areas, through: :masters
+- belongs_to :sub_item
+- belongs_to :image
 
-* Services (job queues, cache servers, search engines, etc.)
+## imagesテーブル
+|Column|Type|Options|
+|------|----|-------|
+|image|intger|null: false|
+|item|references|null: false, foreign_key: true|
 
-* Deployment instructions
+- has_many :items
 
-* ...
+## sub_itemsテーブル
+|Column|Type|Options|
+|------|----|-------|
+|name||integer|null: false|
+|image||integer|null: false|
+
+- has_many :items
+
+## mastersテーブル
+|Column|Type|Options|
+|------|----|-------|
+|user|references|null: false,foreign_key: true|
+|item|references|null: false,foreign_key: true|
+|area|references|null: false,foreign_key: true|
+|status|integer|null:false|
+
+- belongs_to :user
+- belongs_to :item
+- belongs_to :area
