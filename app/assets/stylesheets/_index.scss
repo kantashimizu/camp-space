@@ -55,4 +55,35 @@ body{
       list-style: none;
     }
   }
+  .main-text2{
+    list-style: none;
+    font-size: 30px;
+    text-align: center;
+    font-style: italic;
+    margin-top:100px;
+    line-height: 50px;
+    color: #887878;
+  }
+  .content1{
+    margin-top:100px;
+    .content1-title{
+    text-align: center;
+    font-size: 50px;
+    text-decoration : underline;
+    color: rgb(70, 67, 67);
+    font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+    }
+  }
+
+  .content2{
+    margin-top:100px;
+    .content2-title{
+    text-align: center;
+    font-size: 50px;
+    text-decoration : underline;
+    color: rgb(70, 67, 67);
+    font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+    }
+  }
+
 }
