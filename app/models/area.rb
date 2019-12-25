@@ -1,3 +1,4 @@
 class Area < ApplicationRecord
-  belongs_to :image
+  has_many :images,optional: true
+  belongs_to :master , foreign_key: true,optional: true
 end

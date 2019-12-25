@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_12_25_074137) do
+ActiveRecord::Schema.define(version: 2019_12_25_093813) do
 
   create_table "areas", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "address", null: false
@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(version: 2019_12_25_074137) do
   end
 
   create_table "images", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.integer "image", null: false
+    t.string "image", null: false
     t.bigint "area_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -35,6 +35,18 @@ ActiveRecord::Schema.define(version: 2019_12_25_074137) do
     t.string "text", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "masters", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.bigint "area_id", null: false
+    t.bigint "item_id", null: false
+    t.bigint "user_id", null: false
+    t.integer "state"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["area_id"], name: "index_masters_on_area_id"
+    t.index ["item_id"], name: "index_masters_on_item_id"
+    t.index ["user_id"], name: "index_masters_on_user_id"
   end
 
   create_table "sub_items", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -64,5 +76,8 @@ ActiveRecord::Schema.define(version: 2019_12_25_074137) do
   end
 
   add_foreign_key "images", "areas"
+  add_foreign_key "masters", "areas"
+  add_foreign_key "masters", "items"
+  add_foreign_key "masters", "users"
   add_foreign_key "sub_items", "items"
 end
