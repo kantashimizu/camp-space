@@ -2,7 +2,7 @@
   .header-top
     .header-top_text1
       - if user_signed_in?
-        = link_to "L O G O U T", new_user_session_path
+        = link_to "L O G O U T", destroy_user_session_path, method: :delete
       - else
         = link_to "L O G I N", new_user_session_path
   .header-main
