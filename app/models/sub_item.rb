@@ -1,3 +1,3 @@
 class SubItem < ApplicationRecord
-  belomgs_to :item
+  belongs_to :item
 end
