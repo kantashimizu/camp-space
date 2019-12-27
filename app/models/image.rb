@@ -1,3 +1,3 @@
 class Image < ApplicationRecord
-  has_many :areas
+  belongs_to :area, foreign_key: true,optional: true
 end

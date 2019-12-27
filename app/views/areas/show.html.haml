@@ -1,0 +1,25 @@
+= render '/render/header'
+.show-main
+  .show-imagebox
+    .show-image
+      = image_tag @images[0].image,class:'image1'
+    .show-image_sub
+      - @images.last(7).each do |image|
+        = image_tag image.image, class:'image2'
+  .show-areabox
+    .area-name
+      = @area.name
+    .area-text
+      = @area.text
+    .area-map
+      牧野さんがここにマップ入れる!!!
+    .area-add1
+      住所
+    .area-add2
+      = @area.address
+    .area-tel1
+      tel
+    .area-tel2
+      = @area.tel
+= render '/render/btn'
+= render 'shared/footer'

@@ -1,0 +1,39 @@
+.show-areabox{
+  padding: 3rem 5rem;
+  background-color: rgba(190, 188, 188,0.1 );
+  border-radius: 10%;
+  margin-left: 2rem;
+  .area-name{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    text-decoration : underline;
+  }
+  .area-text{
+    margin-top: 1rem;
+    line-height: 25px;
+    color: rgb(77, 69, 69);
+  }
+  .area-map{
+    background-color: white;
+    margin: 0 auto;
+    width: 350px;
+    height: 300px;
+    color: red;
+  }
+  .area-add1{
+    color: #333;
+    font-weight: bold;
+  }
+  .area-add1{
+    color: #333;
+  }
+  .area-tel1{
+    color: #333;
+    font-weight: bold;
+  }
+  .area-tel2{
+    color: #333;
+  }
+}

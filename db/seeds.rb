@@ -64,71 +64,71 @@ Area.create!(
 Image.create!(
   [
     {
-      image: '1.jpg',
+      image: 'https://www.campjo.com/images/camp/000135_1.jpg',
       area_id: '1',
     },
     {
-      image: '11.jpeg',
+      image: 'https://www.campjo.com/images/camp/000135_2.jpg',
       area_id: '1',
     },
     {
-      image: '12.jpeg',
+      image: 'https://www.campjo.com/images/camp/000135_3.jpg',
       area_id: '1',
     },
     {
-      image: '4.jpeg',
+      image: 'https://www.campjo.com/images/camp/000135_4.jpg',
       area_id: '1',
     },
     {
-      image: '5.jpeg',
+      image: 'https://www.campjo.com/images/camp/000135_5.jpg',
       area_id: '1',
     },
     {
-      image: '14.jpeg',
+      image: 'https://www.campjo.com/images/camp/000828_1.jpg',
       area_id: '2',
     },
     {
-      image: '15.jpeg',
+      image: 'https://www.campjo.com/images/camp/000828_2.jpg',
       area_id: '2',
     },
     {
-      image: '3.jpeg',
+      image: 'https://www.campjo.com/images/camp/000828_3.jpg',
       area_id: '2',
     },
     {
-      image: '21.jpeg',
+      image: 'https://www.campjo.com/images/camp/000828_4.jpg',
       area_id: '2',
     },
     {
-      image: '24.jpeg',
+      image: 'https://www.campjo.com/images/camp/000828_5.jpg',
       area_id: '2',
     },
     {
-      image: '31.jpeg',
+      image: 'https://www.campjo.com/images/camp/000795_1.jpg',
       area_id: '3',
     },
     {
-      image: '32.jpeg',
+      image: 'https://www.campjo.com/images/camp/000795_2.jpg',
       area_id: '3',
     },
     {
-      image: '33.jpeg',
+      image: 'https://www.campjo.com/images/camp/000795_3.jpg',
       area_id: '3',
     },
     {
-      image: '34.jpeg',
+      image: 'https://www.campjo.com/images/camp/000795_4.jpg',
       area_id: '3',
     },
     {
-      image: '43.jpeg',
+      image: 'https://www.campjo.com/images/camp/000795_5.jpg',
       area_id: '3',
     },
     {
-      image: '45.jpeg',
+      image: 'https://www.campjo.com/images/camp/000064_1.jpg',
       area_id: '4',
     },
     {
-      image: '53.jpeg',
+      image: 'https://www.campjo.com/images/camp/000064_2.jpg',
       area_id: '4',
     },
     {
@@ -136,31 +136,31 @@ Image.create!(
       area_id: '4',
     },
     {
-      image: '51.jpeg',
+      image: 'https://www.campjo.com/images/camp/000064_3.jpg',
       area_id: '4',
     },
     {
-      image: '52.jpeg',
+      image: 'https://www.campjo.com/images/camp/000040_1.jpg',
       area_id: '4',
     },
     {
-      image: '54.jpeg',
+      image: 'https://www.campjo.com/images/camp/000040_2.jpg',
       area_id: '5',
     },
     {
-      image: '15.jpeg',
+      image: 'https://www.campjo.com/images/camp/000040_3.jpg',
       area_id: '5',
     },
     {
-      image: '21.jpeg',
+      image: 'https://www.campjo.com/images/camp/000040_4.jpg',
       area_id: '5',
     },
     {
-      image: '24.jpeg',
+      image: 'https://www.campjo.com/images/camp/000040_5.jpg',
       area_id: '5',
     },
     {
-      image: '32.jpeg',
+      image: 'https://www.campjo.com/images/camp/000040_7.jpg',
       area_id: '5',
     }
   ]
