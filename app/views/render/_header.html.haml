@@ -1,0 +1,14 @@
+.header
+  .header-top
+    .header-top_text1
+      - if user_signed_in?
+        = link_to "L O G O U T", destroy_user_session_path, method: :delete
+      - else
+        = link_to "L O G I N", new_user_session_path
+  .header-main
+    = link_to root_path do
+      .header-main_log
+        = image_tag "/header-log.png"
+    .header-main_content
+      .content-text
+        トップ　｜　用品　｜  キャンプ場　｜　ご利用ガイド
