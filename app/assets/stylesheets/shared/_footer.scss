@@ -1,0 +1,19 @@
+.footer_wrap {
+  margin: 30px auto 0;
+  width: 100%;
+  background: #040000;
+  height: 150px;
+  .footer {
+    margin: auto;
+    padding-top: 60px;
+    width: 100%;
+    color: #fff;
+    .copyright {
+      width: 98%;
+      padding: 0 1% 40px;
+      text-align: center;
+      font-size: 97%;
+      font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+    }
+  }
+}

@@ -19,6 +19,7 @@
       %h3.settitle スタンダードセット  28,000円
       %p
         キャンプデイズが提案するキャンプのスタンダードな形。snowpeak社のフラッグシップモデルで取り揃えたベーシックながらも高品質なセット。誰にでも設営しやすく、初めての方でも本格的なキャンプを楽しむことができます。あとはアレンジで必要なものを自由に足して自分たちだけのスタイルを作ってください。
+        -# %img.icon{alt: "おすすめ", src: "/icon_osusume.png"}/
     .camp-set
       %figure
         = link_to item_path(@item[1])do
@@ -33,6 +34,7 @@
       %h3.settitle グランピングセット  35,000円
       %p
         その名も定着してきた「グランピング」。ちょっと贅沢で今までのキャンプとは違ったキャンプがお楽しみいただけます。オシャレテントの代名詞となったノルディスク社製のアスガルドをセットに見た目も空間も最高レベル。お友達にも自慢できること間違い無し！ぜひ贅沢でオシャレで快適なキャンプをお楽しみください。
+  .camp-content2
     .camp-set2
       %figure
         = link_to item_path(@item[3])do
@@ -43,12 +45,67 @@
     .camp-set2
       %figure
         = link_to item_path(@item[4])do
-          = image_tag "https://userdisk.webry.biglobe.ne.jp/004/886/95/N000/000/000/131573705367313102167_164a7_03.jpg"
+          = image_tag "https://userdisk.webry.biglobe.ne.jp/004/886/95/N000/000/000/131573705367313102167_164a7_03.jpg",class:"image-a"
       %h3.settitle2 コンフォーターブルセット  32,000円
       %p
         ノルディスク社のレイサ6をメインにしたタープなしのセットプランをご用意しました。リビングスペースを作ったり個室を増やしたりと変幻自在、様々なアレンジが可能なこのテントの過ごし方はあなた次第！お好みのスタイルにレイサ6を変身させて快適キャンプをお楽しみください。
   .content2
     .content2-title
       CampSite
-      
-  
+    .camp-site
+      %figure
+        = link_to area_path(@area[0])do
+          = image_tag "/1.jpg"
+      %h3.site-title  デイキャンプ場
+      .camp-address
+        東京都大田区
+      .camp-tel
+        123-4566-7890
+      %p
+        とても使いやすいキャンプ場です。岩でできた椅子とテーブルもあり、水道もバーベキュー台のすぐ近くなので便利です。
+    .camp-site
+      %figure
+        = link_to area_path(@area[1])do
+          = image_tag "/14.jpeg"
+      %h3.site-title  太陽の丘オートキャンプ場
+      .camp-address
+        栃木県さくら市
+      .camp-tel
+        000-1111-2222
+      %p
+        キャンプ場は背の高い雑木林に囲まれていて自然に溢れ、静かで、街近のキャンプ場であることを全く感じさせません。
+    .camp-site
+      %figure
+        = link_to area_path(@area[2])do
+          = image_tag "/31.jpeg"
+      %h3.site-title  ミリーズラブ
+      .camp-address
+        群馬県吾妻郡
+      .camp-tel
+        123-4567-8900
+      %p
+        日本初、犬連れキャンパー必見のノーリードで過ごせるキャンプ場。愛犬家のオーナーが自分たちの手で作り上げた愛犬家の夢の詰まったオートキャンプ場です。
+  .camp-title2
+    .camp-site2
+      %figure
+        = link_to area_path(@area[3])do
+          = image_tag "/45.jpeg",size:"180×160"
+      %h3.site-title  石岡市つくばねオートキャンプ場
+      .camp-address
+        茨城県石岡市
+      .camp-tel
+        123-4567-8900
+      %p
+        筑波山のふもとにある自然豊かなキャンプ場。1万平方メートルもある広々とした芝生の広場があり、そりすべりやバドミントンサッカーなどで楽しむことが出来る。
+    .camp-site2
+      %figure
+        = link_to area_path(@area[4])do
+          = image_tag "/21.jpeg",class:"image-b",size:"180×160"
+      %h3.site-title  北軽井沢スイートグラス
+      .camp-address
+        群馬県吾妻郡
+      .camp-tel
+        123-4567-8900
+      %p
+        浅間山のふもとに広がる約3万坪の広大な敷地にあるオートキャンプ場。その広い場内にはアスレチック、トランポリン広場、瞑想用のツリーハウス、ドッグランなど数多くの施設があり、一日では遊びきれない程です。
+= render 'shared/footer'

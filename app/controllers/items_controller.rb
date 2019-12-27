@@ -1,6 +1,7 @@
 class ItemsController < ApplicationController
   def index
     @item = Item.all
+    @area = Area.all
   end
 
   def show

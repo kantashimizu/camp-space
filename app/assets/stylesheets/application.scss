@@ -13,7 +13,11 @@
  *= require_tree .
  *= require_self
  */
-
+li {
+  // list-style: none;
+}
  @import 'index';
  @import 'sessions_new';
-
+ @import "font-awesome-sprockets";
+ @import "font-awesome";
+ @import "./shared/footer";
