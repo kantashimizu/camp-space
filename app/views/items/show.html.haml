@@ -1,0 +1,25 @@
+= render '/render/header'
+.show-main
+  .show-imagebox
+    .show-image
+      = image_tag @images[0].image,class:'image1'
+    .show-image_sub
+      - @images.last(7).each do |image|
+        = image_tag image.image,class:'image2'
+  .show-itembox
+    .show-name
+      = @item.name
+    .show-text
+      = @item.text
+    .show-subname
+      .show-subname-text
+        セット内容
+        .show-subname-name
+          - @images.each do |name|
+            %li= name.name
+    .price-box
+      .price-box_1
+        価格：
+      .price-box_2
+        = "#{@item.price}円"
+= render '/render/btn'
