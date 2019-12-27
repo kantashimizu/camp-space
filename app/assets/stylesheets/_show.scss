@@ -2,7 +2,7 @@
   padding: 5rem 10rem;
   display: flex;
   .show-imagebox{
-    margin-top: 3rem;
+    margin-top: 2rem;
     .show-image{
       border: rgb(189, 187, 187) 1px solid;
       img{
@@ -22,11 +22,15 @@
   }
   .show-itembox{
     padding: 3rem 5rem;
+    background-color: rgba(190, 188, 188,0.1 );
+    border-radius: 10%;
+    margin-left: 2rem;
     .show-name{
       text-align: center;
       font-size: 2rem;
       font-weight: bold;
       color: #333;
+      text-decoration : underline;
     }
     .show-text{
       margin-top: 1rem;
