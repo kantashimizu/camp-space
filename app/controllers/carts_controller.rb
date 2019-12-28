@@ -2,7 +2,7 @@ class CartsController < ApplicationController
   def create
     @cart = Cart.new(cart_params)
     if @cart.save
-      redirect_to cart_show_path(current_user.id)
+      redirect_to root_path
     else
       binding.pry
     end
@@ -11,7 +11,7 @@ class CartsController < ApplicationController
   def create2
     @cart = Cart.new(area_params)
     if @cart.save
-      redirect_to cart_show_path(current_user.id)
+      redirect_to root_path
     else
       binding.pry
     end
