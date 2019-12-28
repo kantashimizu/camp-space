@@ -5,6 +5,11 @@
         = link_to "L O G O U T", destroy_user_session_path, method: :delete
       - else
         = link_to "L O G I N", new_user_session_path
+    .header-top_text2
+      ようこそ
+      = current_user.family_name_knj
+      = current_user.name_knj
+      さん
   .header-main
     = link_to root_path do
       .header-main_log
@@ -15,6 +20,7 @@
         %a{href: "#equipmentset"}｜　用品　｜
         %a{href: "#campset"} キャンプ場　｜ご利用ガイド
     .cart-box
+    .cart-mark
       = link_to "/cart/show/#{current_user.id}" do
         = image_tag "/cart.png"
 

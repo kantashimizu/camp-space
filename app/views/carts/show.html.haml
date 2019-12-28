@@ -1,5 +1,9 @@
 - @carts.each do |cart|
-  - if cart.item_id == nil
-    選択されていません
-  - else
-    = cart.items.price
+  .class
+    - if cart.item
+      = cart.item.price
+      = cart.item.name
+      
+    - if cart.area
+      = cart.area.name
+      = cart.area.address

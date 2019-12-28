@@ -1,5 +1,6 @@
 class Cart < ApplicationRecord
-  has_many :items
-  has_many :users
-  has_many :areas
+
+  belongs_to :user , foreign_key: true,optional: true
+  belongs_to :item , optional: true
+  belongs_to :area , optional: true
 end

@@ -7,7 +7,5 @@ Rails.application.routes.draw do
   resources :areas, only: [:show] do
     post  "/areas/carts", to:"carts#create2"
   end
-
-
   get "/cart/show/:id", to:"carts#show"
 end
