@@ -16,3 +16,11 @@
 //= require activestorage
 //= require_tree .
 
+function initMap(){
+  let map = new google.maps.Map(document.getElementById('area-map'),{
+  center: {lat: -34.397, lng: 150.644},
+  zoom: 8
+  });
+}
+
+
