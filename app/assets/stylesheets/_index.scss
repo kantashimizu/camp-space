@@ -2,221 +2,231 @@ body{
   padding: 0;
   margin: 0;
 }
+html {
+  -webkit-scroll-behavior:smooth;
+  scroll-behavior:smooth;
 
-.header{
-  height: 200px;
-  .header-top{
-    height: 40px;
-    background-color: #040000;
-    line-height: 40px;
-    .header-top_text1{
-      float: right;
-      margin-right: 50px;
-      a{
-        color: white;
-        font-weight: bold;
-        text-decoration: none;
-      }
-    }
-  }
-  .header-main{
+  .header{
     height: 200px;
-    background-color: white!important;
-    display: flex;
-    
-    img{
-      height: 200px;
-      margin-left: 100px;
+    .header-top{
+      height: 40px;
+      background-color: #040000;
+      line-height: 40px;
+      .header-top_text1{
+        float: right;
+        margin-right: 50px;
+        a{
+          color: white;
+          font-weight: bold;
+          text-decoration: none;
+        }
+      }
     }
-    .header-main_content{
-      line-height: 300px;
-      font-size: 1rem;
+    .header-main{
+      height: 200px;
+      background-color: white!important;
+      display: flex;
+      
+      img{
+        height: 200px;
+        margin-left: 100px;
+      }
+      .header-main_content{
+        line-height: 300px;
+        font-size: 1rem;
+      }
+
+    }
+  }
+  .main{
+    padding-top: 20px;
+    img{
+      height: 600px;
+      width: 100%;
+    }
+    .main-text{
+      position: absolute;
+      top:300px;
+      left: 300px;
+      font-size: 30px;
+      line-height: 60px;
+      font-weight: bold;
+      color: white;
+      font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+      li{
+        list-style: none;
+      }
+    }
+    .main-text2{
+      list-style: none;
+      font-size: 30px;
+      text-align: center;
+      font-style: italic;
+      margin-top:100px;
+      line-height: 50px;
+      color: #887878;
+    }
+    .content1{
+      margin-top:100px;
+      #equipmentset{
+      text-align: center;
+      font-size: 50px;
+      text-decoration : underline;
+      color: rgb(70, 67, 67);
+      font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+      margin-bottom: 20px;
+      }
+      .camp-set {
+        position: relative;
+        height: 440px;
+        width: 28%;
+        border-radius: 10px;
+        box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+        background: linear-gradient(#fff,#e6e6e6);
+        padding: 1.5%;
+        float: left;
+        margin: 0px 1% 20px;
+        img {
+          border: none;
+          max-width: 100%;
+          height: auto;
+          vertical-align: middle;
+        }
+        .settitle {
+          margin-top: 10px;
+          color: #4e4a4a;
+        }
+        p {
+          padding: 0px;
+          color: #666;
+          font-size: 13px;
+          .icon {
+            position: absolute;
+            top: -10px;
+            right: 0;
+            width: 120px;
+            color: #fff;
+          }
+        }
+      }
+    }
+    .camp-content2 {
+      text-align: center;
+      letter-spacing:-4px;
+      .camp-set2 {
+        height: 440px;
+        width: 28%;
+        border-radius: 10px;
+        box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+        background: linear-gradient(#fff,#e6e6e6);
+        padding: 1.5%;
+        display: inline-block;
+        letter-spacing:normal;
+        margin: 10px 1% 20px;
+        img {
+          border: none;
+          max-width: 100%;
+          height: auto;
+          vertical-align: middle;
+        }
+        .settitle2 {
+          margin-top: 10px;
+          color: #4e4a4a;
+        }
+        p {
+          padding: 0px;
+          color: #666;
+          font-size: 13px;
+        }
+      }
     }
 
-  }
-}
-.main{
-  padding-top: 20px;
-  img{
-    height: 600px;
-    width: 100%;
-  }
-  .main-text{
-    position: absolute;
-    top:300px;
-    left: 300px;
-    font-size: 30px;
-    line-height: 60px;
-    font-weight: bold;
-    color: white;
-    font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
-    li{
-      list-style: none;
-    }
-  }
-  .main-text2{
-    list-style: none;
-    font-size: 30px;
-    text-align: center;
-    font-style: italic;
-    margin-top:100px;
-    line-height: 50px;
-    color: #887878;
-  }
-  .content1{
-    margin-top:100px;
-    .content1-title{
-    text-align: center;
-    font-size: 50px;
-    text-decoration : underline;
-    color: rgb(70, 67, 67);
-    font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
-    margin-bottom: 20px;
-    }
-    .camp-set {
-      position: relative;
-      height: 440px;
-      width: 28%;
-      border-radius: 10px;
-      box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
-      background: linear-gradient(#fff,#e6e6e6);
-      padding: 1.5%;
-      float: left;
-      margin: 0px 1% 20px;
-      img {
-        border: none;
-        max-width: 100%;
-        height: auto;
-        vertical-align: middle;
+    .content2{
+      margin-top:50px;
+      overflow-y: scroll;
+      scroll-behavior: smooth;
+      #campset{
+        text-align: center;
+        font-size: 50px;
+        text-decoration : underline;
+        color: rgb(70, 67, 67);
+        font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+        margin-bottom: 20px;
       }
-      .settitle {
-        margin-top: 10px;
-        color: #4e4a4a;
+      .camp-site {
+        position: relative;
+        height: 440px;
+        width: 28%;
+        border-radius: 10px;
+        box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+        background: linear-gradient(#fff,#e6e6e6);
+        padding: 1.5%;
+        float: left;
+        margin: 0px 1% 20px;
+        img {
+          border: none;
+          max-width: 100%;
+          height: auto;
+          vertical-align: middle;
+        }
+        .site-title {
+          margin-top: 10px;
+          color: #4e4a4a;
+        }
+        .camp-address {
+          font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+          color: #040000;
+        }
+        .camp-tel {
+          font-size: 14px;
+        }
+        p {
+          padding: 0px;
+          color: #666;
+          font-size: 13px;
+        }
       }
-      p {
-        padding: 0px;
-        color: #666;
-        font-size: 13px;
-        .icon {
-          position: absolute;
-          top: -10px;
-          right: 0;
-          width: 120px;
-          color: #fff;
+    }
+    .camp-title2 {
+      text-align: center;
+      letter-spacing:-4px;
+      .camp-site2 {
+        height: 440px;
+        width: 28%;
+        border-radius: 10px;
+        box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+        background: linear-gradient(#fff,#e6e6e6);
+        padding: 1.5%;
+        display: inline-block;
+        letter-spacing:normal;
+        margin: 10px 1% 20px;
+        img {
+          border: none;
+          max-width: 100%;
+          height: auto;
+          vertical-align: middle;
+        }
+        .site-title {
+          margin-top: 10px;
+          color: #4e4a4a;
+        }
+        .camp-address {
+          font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+          color: #040000;
+        }
+        .camp-tel {
+          font-size: 14px;
+        }
+        p {
+          padding: 0px;
+          color: #666;
+          font-size: 13px;
         }
       }
     }
   }
-  .camp-content2 {
-    text-align: center;
-    letter-spacing:-4px;
-    .camp-set2 {
-      height: 440px;
-      width: 28%;
-      border-radius: 10px;
-      box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
-      background: linear-gradient(#fff,#e6e6e6);
-      padding: 1.5%;
-      display: inline-block;
-      letter-spacing:normal;
-      margin: 10px 1% 20px;
-      img {
-        border: none;
-        max-width: 100%;
-        height: auto;
-        vertical-align: middle;
-      }
-      .settitle2 {
-        margin-top: 10px;
-        color: #4e4a4a;
-      }
-      p {
-        padding: 0px;
-        color: #666;
-        font-size: 13px;
-      }
-    }
-  }
-
-  .content2{
-    margin-top:50px;
-    .content2-title{
-    text-align: center;
-    font-size: 50px;
-    text-decoration : underline;
-    color: rgb(70, 67, 67);
-    font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
-    margin-bottom: 20px;
-    }
-    .camp-site {
-      position: relative;
-      height: 440px;
-      width: 28%;
-      border-radius: 10px;
-      box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
-      background: linear-gradient(#fff,#e6e6e6);
-      padding: 1.5%;
-      float: left;
-      margin: 0px 1% 20px;
-      img {
-        border: none;
-        max-width: 100%;
-        height: auto;
-        vertical-align: middle;
-      }
-      .site-title {
-        margin-top: 10px;
-        color: #4e4a4a;
-      }
-      .camp-address {
-        font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
-        color: #040000;
-      }
-      .camp-tel {
-        font-size: 14px;
-      }
-      p {
-        padding: 0px;
-        color: #666;
-        font-size: 13px;
-      }
-    }
-  }
-  .camp-title2 {
-    text-align: center;
-    letter-spacing:-4px;
-    .camp-site2 {
-      height: 440px;
-      width: 28%;
-      border-radius: 10px;
-      box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
-      background: linear-gradient(#fff,#e6e6e6);
-      padding: 1.5%;
-      display: inline-block;
-      letter-spacing:normal;
-      margin: 10px 1% 20px;
-      img {
-        border: none;
-        max-width: 100%;
-        height: auto;
-        vertical-align: middle;
-      }
-      .site-title {
-        margin-top: 10px;
-        color: #4e4a4a;
-      }
-      .camp-address {
-        font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
-        color: #040000;
-      }
-      .camp-tel {
-        font-size: 14px;
-      }
-      p {
-        padding: 0px;
-        color: #666;
-        font-size: 13px;
-      }
-    }
+  a {
+    text-decoration: none;
+    color: #4e4a4a;
   }
 }
