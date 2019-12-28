@@ -15,6 +15,6 @@
         %a{href: "#equipmentset"}｜　用品　｜
         %a{href: "#campset"} キャンプ場　｜ご利用ガイド
     .cart-box
-      = link_to cart_show_path(current_user.id) do
+      = link_to "/cart/show/#{current_user.id}" do
         = image_tag "/cart.png"
 

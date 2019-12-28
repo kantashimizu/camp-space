@@ -1,2 +1,5 @@
-- @cart.each do |c|
-  = c.items.name
+- @carts.each do |cart|
+  - if cart.item_id == nil
+    選択されていません
+  - else
+    = cart.items.price
