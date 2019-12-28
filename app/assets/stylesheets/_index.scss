@@ -139,10 +139,12 @@ html {
           vertical-align: middle;
         }
         .settitle2 {
+          text-align: left;
           margin-top: 10px;
           color: #4e4a4a;
         }
         p {
+          text-align: left;
           padding: 0px;
           color: #666;
           font-size: 13px;
@@ -185,6 +187,10 @@ html {
         }
         .camp-tel {
           font-size: 14px;
+          .phone {
+            height: 20px;
+            width: 20px;
+          }
         }
         p {
           padding: 0px;
@@ -212,17 +218,25 @@ html {
           vertical-align: middle;
         }
         .site-title {
+          text-align: left;
           margin-top: 10px;
           color: #4e4a4a;
         }
         .camp-address {
+          text-align: left;
           font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
           color: #040000;
         }
         .camp-tel {
+          text-align: left;
           font-size: 14px;
+          .phone {
+            height: 20px;
+            width: 20px;
+          }
         }
         p {
+          text-align: left;
           padding: 0px;
           color: #666;
           font-size: 13px;
