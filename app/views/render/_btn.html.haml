@@ -1,5 +1,0 @@
-= form_for(@item, url: {controller:'/crats', action:'create',method:'POST' }) do |f|
-  = f.hidden_field :item_id ,value:@item.id
-  = f.hidden_field :user_id ,value:current_user.id
-  = f.submit "カートに入れる",class:"cart-btn"
-    
