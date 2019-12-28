@@ -90,7 +90,6 @@ html {
       }
       .camp-set {
         position: relative;
-        height: 440px;
         width: 28%;
         border-radius: 10px;
         box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
@@ -101,7 +100,7 @@ html {
         img {
           border: none;
           max-width: 100%;
-          height: auto;
+          height: 300px;
           vertical-align: middle;
         }
         .settitle {
@@ -126,7 +125,6 @@ html {
       text-align: center;
       letter-spacing:-4px;
       .camp-set2 {
-        height: 440px;
         width: 28%;
         border-radius: 10px;
         box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
@@ -138,7 +136,7 @@ html {
         img {
           border: none;
           max-width: 100%;
-          height: auto;
+          height: 300px;
           vertical-align: middle;
         }
         .settitle2 {
@@ -155,8 +153,6 @@ html {
 
     .content2{
       margin-top:50px;
-      overflow-y: scroll;
-      scroll-behavior: smooth;
       #campset{
         text-align: center;
         font-size: 50px;
@@ -167,7 +163,6 @@ html {
       }
       .camp-site {
         position: relative;
-        height: 440px;
         width: 28%;
         border-radius: 10px;
         box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
@@ -178,7 +173,7 @@ html {
         img {
           border: none;
           max-width: 100%;
-          height: auto;
+          height: 300px;
           vertical-align: middle;
         }
         .site-title {
@@ -203,7 +198,6 @@ html {
       text-align: center;
       letter-spacing:-4px;
       .camp-site2 {
-        height: 440px;
         width: 28%;
         border-radius: 10px;
         box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
@@ -215,7 +209,7 @@ html {
         img {
           border: none;
           max-width: 100%;
-          height: auto;
+          height: 300px;
           vertical-align: middle;
         }
         .site-title {
