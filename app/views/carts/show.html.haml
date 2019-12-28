@@ -1,9 +1,54 @@
-- @carts.each do |cart|
-  .class
-    - if cart.item
-      = cart.item.price
-      = cart.item.name
-      
-    - if cart.area
-      = cart.area.name
-      = cart.area.address
+= render '/render/header'
+.cart-main
+  .cart-text
+    現在のカートの中
+  .cart-box
+    .box-title
+      .box-title_name
+        用品名
+      .box-title_destroy
+        削除
+      .box-title_image
+        用品写真
+      .box-title_price
+        単価
+      .box-title_text
+        商品について
+    - @carts.each do |cart|
+      - if cart.item
+        .box-item
+          .box-item_name
+            = cart.item.name
+          .box-item_destroy
+            = link_to "削除","/carts/#{cart.id}" ,method: :delete
+          .box-item_image
+            = image_tag cart.item.sub_items[0].image
+          .box-item_price
+            = "¥#{cart.item.price}"
+          .box-item_text
+            = cart.item.text
+    .box-title
+      .box-title_name
+        キャンプ場
+      .box-title_destroy
+        削除
+      .box-title_image
+        写真
+      .box-title_price
+        単価
+      .box-title_text
+        キャンプ場について
+    - @carts.each do |cart|
+      - if cart.area
+        .box-item
+          .box-item_name
+            = cart.area.name
+          .box-item_destroy
+            = link_to "削除","/carts/#{cart.id}" ,method: :delete
+          .box-item_image
+            = image_tag cart.area.images[0].image, width:"100px"
+          .box-item_price
+            ¥ 0
+          .box-item_text
+            = cart.area.text
+= render 'render/footer'
