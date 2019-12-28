@@ -1,6 +1,11 @@
 Rails.application.routes.draw do
   devise_for :users
   root to: "items#index"
-  resources :items, only: [:index,:show]
-  resources :areas, only: [:show]
+  resources :items, only: [:index,:show] do
+    resources :carts, only: [:create]
+  end
+  resources :areas, only: [:show] do
+    post  "/areas/carts", to:"carts#create2"
+  end
+  get "/cart/show/", to:"carts#show"
 end
