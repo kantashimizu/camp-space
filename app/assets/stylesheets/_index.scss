@@ -268,4 +268,37 @@ html {
     text-decoration: none;
     color: #4e4a4a;
   }
+  .content2{
+    margin-top:50px;
+    #userguide{
+      text-align: center;
+      font-size: 50px;
+      text-decoration : underline;
+      color: rgb(70, 67, 67);
+      font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+      margin-bottom: 20px;
+    }
+    .guide-box{
+      list-style: none;
+      padding :0 30rem;
+      .guide-title{
+        font-size: 2.2rem;
+        color: rgb(180, 164, 164);
+        font-style: italic;
+        text-decoration : underline;
+      }
+      .guide-text1{
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding-left: 2rem;
+        margin-top: 0.5rem;
+        color: #333;
+      }
+      .guide-text2{
+        padding-left: 2rem;
+        margin-top: 1rem;
+        color: #333;
+      }
+    }
+  }
 }
