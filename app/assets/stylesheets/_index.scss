@@ -40,11 +40,14 @@ html {
       .header-main_content{
         line-height: 300px;
         font-size: 1rem;
+        .pay-link{
+          color: red;
+        }
       }
       .cart-box{
         padding-top: 2rem;
-        margin-left: 44rem;
         position: relative;
+        margin-left: 44rem;
         .cart-mark{
           width: 3rem;
           height: 3rem;
