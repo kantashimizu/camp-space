@@ -9,7 +9,6 @@
       ようこそ
       = current_user.family_name_knj
       = current_user.name_knj
-      = link_to "test",new_card_path
       さん
   .header-main
     = link_to root_path do
@@ -21,7 +20,7 @@
         %a{href: "#equipmentset"}｜　用品　｜
         %a{href: "#campset"} キャンプ場　｜
         %a{href: "#userguide"} ご利用ガイド
-        = link_to "｜購入手続き",new_master_path,class:'pay-link'
+        = link_to "｜購入手続き", new_card_path,class:'pay-link'
     .cart-box
       .cart-mark
         = @carts.length

@@ -9,7 +9,7 @@ class MastersController < ApplicationController
     @master = Master.new(master_params)
     @carts = Cart.where(user_id:current_user.id)
     if @master.save
-        @carts.each do |cart|
+        @carts.each do |cart| #購入時にカートテーブルの削除
         cart.destroy
       end
     else
