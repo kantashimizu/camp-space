@@ -1,0 +1,11 @@
+@carts = Cart.where(user_id:current_user.id)
+で引張ている
+= form_for(@master, url: masters_path,method:'POST' ) do |f|
+  - @carts.each do |cart| 
+    - if cart.area_id 
+      = f.hidden_field :area_id ,value:cart.area_id
+    - elsif cart.item_id 
+      = f.hidden_field :item_id ,value:cart.item_id
+      = f.hidden_field :state ,value:1
+      = f.hidden_field :user_id ,value:current_user.id
+      = f.submit "購入する"

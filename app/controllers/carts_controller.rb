@@ -25,7 +25,6 @@ class CartsController < ApplicationController
 
   def show
     @carts = Cart.where(user_id:current_user.id)
-    
   end
 
   def cart_params

@@ -1,5 +1,5 @@
 class Master < ApplicationRecord
-  has_many :items,optional: true
-  has_many :users,optional: true
-  has_many :areas,optional: true
+  belongs_to :user , foreign_key: true,optional: true
+  belongs_to :item , optional: true
+  belongs_to :area , optional: true
 end
