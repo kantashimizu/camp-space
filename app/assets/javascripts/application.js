@@ -16,11 +16,31 @@
 //= require activestorage
 //= require_tree .
 
+let map
+let geocoder
+
 function initMap(){
-  let map = new google.maps.Map(document.getElementById('area-map'),{
-  center: {lat: -34.397, lng: 150.644},
-  zoom: 8
+  geocoder = new google.maps.Geocoder()
+  map = new google.maps.Map(document.getElementById('area-map'),{
+  center: {lat: 35.5939, lng: 139.711},
+  zoom: 15
   });
 }
 
+function codeAddress(){
+  // 入力を取得
+  let inputAddress = document.getElementById('address').value;
 
+  // geocodingしたあとmapを移動
+  geocoder.geocode( { 'address': inputAddress}, function(results, status){
+    if (status == 'OK') {
+      map.setCenter(results[0].geometry.location);
+      var marker = new google.maps.Marker({
+        map: map,
+        position: results[0].geometry.location
+      });
+    } else {
+      alert('Geocode was not successful for the following reason: ' + status);
+    }
+  });
+}
