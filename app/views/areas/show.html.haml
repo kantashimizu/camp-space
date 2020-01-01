@@ -22,11 +22,14 @@
     .area-tel1
       tel
     .area-tel2
-      - if user_signed_in?
+      - if user_signed_in? && @carts.length < 2
         = @area.tel
         - @cart = Cart.new
         = form_for(@cart, url: area_areas_carts_path(@area.id),method:'POST' ) do |f|
           = f.hidden_field :area_id ,value:@area.id
           = f.hidden_field :user_id ,value:current_user.id
           = f.submit "カートに入れる",class:"cart-btn"
+      - else
+        .cart-btn2
+          選択済みです。
 = render 'render/footer'
