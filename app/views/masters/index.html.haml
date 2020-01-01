@@ -1,0 +1,36 @@
+.credit-wrapper
+  .single-header
+    %h1.single-header__logo
+      = link_to root_path do
+        = image_tag '/header-log.png',width:'160px'
+- @prices = [] 
+- @masters.each do |master|
+  .master-title
+    .title-num
+      = master.id
+    .title-day
+      注文日時
+      %li= master.created_at.strftime("%Y/%m/%d %H:%M")
+    .title-item
+      商品
+      %li= master.item.name
+    .title-price
+      売上単価
+      %li= master.item.price
+    .title-del
+      配送場所
+      %li= master.area.name
+    .title-add
+      住所
+      %li= master.area.address
+    .title-btn
+      - if master.state == 1
+        = form_for(master, url: master_path(master.id),method:'PATCH' ) do |f|
+          = f.hidden_field :state ,value:2
+          = f.submit "返却完了"
+      - else
+        返却済み
+    - @prices << (master.item.price)
+.price-all
+  合計売り上げ
+  = "¥#{@prices.sum}"

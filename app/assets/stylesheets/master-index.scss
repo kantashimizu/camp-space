@@ -1,0 +1,56 @@
+.master-title{
+  z-index: 1;
+  display: flex;
+  list-style: none;
+  font-weight: bold;
+  border-bottom: 1px solid #333;
+  margin: 0 auto;
+  .title-num{
+    margin-left: 2rem;
+  }
+  .title-day{
+    margin-left: 1rem;
+  }
+  .title-item{
+    margin-left: 1rem;
+    width: 200px;
+  }
+  .title-price{
+    margin-left: 1rem;
+  }
+  .title-del{
+    margin-left: 1rem;
+    width: 200px;
+  }
+  .title-add{
+    margin-left: 1rem;
+    width: 20rem;
+  }
+  li{
+    font-weight: normal;
+  }
+  form{
+    padding: 0;
+    margin-left: 1rem;
+    input{
+      margin-top: 1.4rem;
+      height: 2rem;
+      font-weight: bold;
+      background-color: rgb(66, 64, 64);
+      color: white;
+    }
+  }
+}
+.price-all{
+  position: fixed;
+  z-index: 2;
+  display: inline-block;
+  bottom: 3rem;
+  left: 3rem;
+  background-color: darkgray;
+  height: 3rem;
+  width: 10rem;
+  text-align: center;
+  font-weight: bold;
+  color: rgb(252, 250, 250);
+}
