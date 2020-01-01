@@ -1,7 +1,8 @@
 .header
   .header-top
-    - if current_user.id == 1
-      = link_to "管理者ページ",masters_path,class:"master-link"
+    -if user_signed_in?
+      - if current_user.id == 1
+        = link_to "管理者ページ",masters_path,class:"master-link"
     .header-top_text1
       - if user_signed_in?
         = link_to "L O G O U T", destroy_user_session_path, method: :delete
@@ -18,12 +19,13 @@
       .header-main_log
         = image_tag "/header-log.png"
     .header-main_content
-      .content-text
-        %a トップ
-        %a{href: "#equipmentset"}｜　用品　｜
-        %a{href: "#campset"} キャンプ場　｜
-        %a{href: "#userguide"} ご利用ガイド
-        = link_to "｜購入手続き", new_card_path,class:'pay-link'
+      - if user_signed_in?
+        .content-text
+          %a トップ
+          %a{href: "#equipmentset"}｜　用品　｜
+          %a{href: "#campset"} キャンプ場　｜
+          %a{href: "#userguide"} ご利用ガイド
+          = link_to "｜購入手続き", new_card_path,class:'pay-link'
     - if user_signed_in?
       .cart-box
         .cart-mark
