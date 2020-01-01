@@ -13,9 +13,6 @@
  *= require_tree .
  *= require_self
  */
-li {
-  // list-style: none;
-}
  @import 'index';
  @import 'sessions_new';
  @import "font-awesome-sprockets";
@@ -23,3 +20,4 @@ li {
  @import "./shared/footer";
  @import "area-show";
  @import "cart_show";
+ @import "./card-show";
