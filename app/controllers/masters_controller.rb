@@ -26,7 +26,23 @@ class MastersController < ApplicationController
     redirect_to root_path
   end
 
+  def index
+    @masters = Master.all
+  end
+
+  def update
+    @masters = Master.find(params[:id])
+    if @masters.update(update_params)
+      redirect_to masters_path
+    else
+    end
+  end
+
   def master_params
+    params.require(:master).permit!
+  end
+
+  def update_params
     params.require(:master).permit!
   end
 
