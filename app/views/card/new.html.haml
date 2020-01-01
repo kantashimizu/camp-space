@@ -1,6 +1,26 @@
+.credit-wrapper
+  .single-header
+    %h1.single-header__logo
+      = link_to root_path do
+        = image_tag '/header-log.png',width:"160px"
 = form_tag(pay_card_index_path, method: :post, id: 'charge-form',  name: "inputForm") do
   %label カード番号
   = text_field_tag "number", "", class: "number", placeholder: "半角数字のみ" ,maxlength: "16", type: "text", id: "card_number"
+  %ul
+    %li
+      = image_tag "//www-mercari-jp.akamaized.net/assets/img/card/visa.svg?2482339763",height:"40px",width:"40px",alt:"visa"
+    %li
+      = image_tag "//www-mercari-jp.akamaized.net/assets/img/card/master-card.svg?2482339763",height:"40px",width:"40px",alt:"master-card"
+    %li
+      = image_tag "//www-mercari-jp.akamaized.net/assets/img/card/saison-card.svg?2482339763",height:"40px",width:"40px",alt:"saison-card"
+    %li
+      = image_tag "//www-mercari-jp.akamaized.net/assets/img/card/jcb.svg?2482339763",height:"40px",width:"40px",alt:"jcb"
+    %li
+      = image_tag "//www-mercari-jp.akamaized.net/assets/img/card/american_express.svg?2482339763",height:"40px",width:"40px",alt:"american_express"
+    %li
+      = image_tag "//www-mercari-jp.akamaized.net/assets/img/card/dinersclub.svg?2482339763",height:"40px",width:"40px",alt:"dinersclub"
+    %li
+      =image_tag "//www-mercari-jp.akamaized.net/assets/img/card/discover.svg?2482339763",height:"40px",width:"40px",alt:"discover"
   %br
   %label 有効期限
   %select#exp_month{name: "exp_month", type: "text"}
@@ -36,4 +56,6 @@
   %label セキュリティコード
   = text_field_tag "cvc", "", class: "cvc", placeholder: "カード背面3~4桁の番号", maxlength: "4", id: "cvc"
   #card_token
-  = submit_tag "追加する", id: "token_submit"
+  = submit_tag "登録する", id: "token_submit"
+
+= render 'render/footer'
