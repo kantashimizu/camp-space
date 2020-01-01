@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   end
   get "/cart/show/:id", to:"carts#show" 
   delete  "/carts/:id", to:"carts#destroy"
-  resources :masters, only: [:new,:create,:destroy]
+  resources :masters, only: [:new,:create,:destroy,:show]
 
   resources :card, only: [:new, :show] do
     collection do
