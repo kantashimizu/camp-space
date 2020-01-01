@@ -22,10 +22,13 @@
         価格：
       .price-box_2
         = "#{@item.price}円"
-        - if user_signed_in?
+        - if user_signed_in? && @carts.length < 2
           - @cart = Cart.new
           = form_for(@cart, url: item_carts_path(@item.id),method:'POST' ) do |f|
             = f.hidden_field :item_id ,value:@item.id
             = f.hidden_field :user_id ,value:current_user.id
             = f.submit "カートに入れる",class:"cart-btn"
+        - else
+          .cart-btn2
+            選択済みです。
 = render 'render/footer'
