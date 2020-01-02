@@ -4,20 +4,22 @@
       = link_to root_path do
         = image_tag '/header-log.png',width:"160px"
 .master-contents
+  %h1
+    購入確認
   = form_for(@master, url: masters_path,method:'POST' ) do |f|
     - @carts.each do |cart| 
       - if cart.area_id
         .area-box
-          .area-title
+          .area-box_title
             キャンプ場
           .area-box_name
             = cart.area.name
           .area-box_image
-            = image_tag cart.area.images[0].image, width:"200px"
+            = image_tag cart.area.images[0].image, width:"300px"
           .area-box_text
             = cart.area.text
             = f.hidden_field :area_id ,value:cart.area_id
-        = f.submit "購入する"
+        = f.submit "購入する",class:"purchase-button"
 
       - elsif cart.item_id
         .user-box
@@ -27,10 +29,12 @@
             = current_user.family_name_knj
             = current_user.name_knj
         .item-box
+          .item-box_title
+            キャンプセット
           .item-box_name
             = cart.item.name
           .item-box_image
-            = image_tag cart.item.sub_items[0].image,width:"200px"
+            = image_tag cart.item.sub_items[0].image,width:"300px"
           .item-box_price
             = "¥#{cart.item.price}"
           .item-box_text
