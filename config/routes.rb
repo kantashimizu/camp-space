@@ -9,8 +9,7 @@ Rails.application.routes.draw do
   end
   get "/cart/show/:id", to:"carts#show" 
   delete  "/carts/:id", to:"carts#destroy"
-  resources :masters, only: [:new,:create,:destroy,:index,:update]
-
+  resources :masters, only: [:new,:create,:destroy,:index,:update] 
   resources :card, only: [:new, :show] do
     collection do
       post 'show', to: 'card#show'
@@ -18,5 +17,6 @@ Rails.application.routes.draw do
       post 'delete', to: 'card#delete'
     end
   end
+  get "masters/complete", to:"masters#complete"
 
 end

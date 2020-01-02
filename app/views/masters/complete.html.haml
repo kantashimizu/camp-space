@@ -1,0 +1,42 @@
+.credit-wrapper
+  .single-header
+    %h1.single-header__logo
+      = link_to root_path do
+        = image_tag '/header-log.png',width:"160px"
+.master-complete
+  %h2.master-complete_header
+    予約完了しました
+  - @masters.each do |master|
+    - if master.state == 1
+      .master-complete_main
+        .master-complete_in
+          .master-complete_title
+            ご予約有難う御座います
+          .master-complete_price
+            = "料金は¥#{master.item.price}円です"
+          .master-complete_user
+            ユーザー名
+          .master-complete_name
+            = current_user.family_name_knj
+            = current_user.name_knj
+        .master-complete_camp
+          .master-complete_camp1
+            .master-complete_area
+              キャンプ場
+            .master-complete_area_name
+              = master.area.name
+            .master-complete_area_image
+              = image_tag master.area.images[0].image, width:"200px"
+          .master-complete_camp2
+            .master-complete_item
+              キャンプセット
+            .master-complete_item_name
+              = master.item.name
+            .master-complete_image
+              = image_tag master.item.sub_items[0].image,width:"200px"
+        .master-complete_under
+          .master-complete_text
+            ※ ご利用前にご利用ガイドをお読みください
+          .master-complete_button
+            = link_to "トップページに戻る",'/',class:"btn-top-page"
+= render 'render/footer'

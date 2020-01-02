@@ -23,7 +23,7 @@ class MastersController < ApplicationController
     else
       binding.pry
     end
-    redirect_to root_path
+    redirect_to masters_complete_path
   end
 
   def index
@@ -38,6 +38,11 @@ class MastersController < ApplicationController
     end
   end
 
+  def complete
+    @masters = Master.all
+  end
+  
+  private
   def master_params
     params.require(:master).permit!
   end
