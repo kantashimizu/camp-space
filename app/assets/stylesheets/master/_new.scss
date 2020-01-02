@@ -1,0 +1,65 @@
+.master-contents {
+  height: auto;
+  width: 100%;
+  h1 {
+    text-align: center;
+  }
+  .new_master {
+    height: 100%;
+    border: 1px solid #ccc;
+    margin: 0 auto;
+    width: 60%;
+    margin-bottom: 60px;
+  }
+}
+.user-box {
+  margin-bottom: 30px;
+  border-bottom: 1px dashed #ccc;
+  &_title {
+    font-weight: 600;
+    font-size: 16px;
+  }
+  &_name {
+    font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+    margin-bottom: 10px;
+  }
+}
+.item-box {
+  margin-bottom: 30px;
+  border-bottom: 1px dashed #ccc;
+  &_title {
+    font-weight: 600;
+  }
+  &_price {
+    font-size: 20px;
+    color: indianred;
+  }
+  &_text {
+    color: gray;
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+}
+.area-box {
+  border-bottom: 1px dashed #ccc;
+  margin-bottom: 30px;
+  &_title {
+    font-weight: 600;
+  }
+  &_text {
+    color: gray;
+    font-size: 14px;
+    margin: 10px 0 10px 0 ;
+  }
+}
+.purchase-button {
+  height: 48px;
+  width: 30%;
+  border: 1px solid #ea352d;
+  background: #ea352d;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 15px;
+  cursor: pointer;
+}
