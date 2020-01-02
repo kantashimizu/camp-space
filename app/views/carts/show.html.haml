@@ -20,7 +20,7 @@
           .box-item_name
             = cart.item.name
           .box-item_destroy
-            = link_to "削除","/carts/#{cart.id}" ,method: :delete
+            = link_to "削除","/carts/#{cart.id}" ,method: :delete, data: {confirm: "カートから削除して宜しいですか？。"}
           .box-item_image
             = image_tag cart.item.sub_items[0].image
           .box-item_price
