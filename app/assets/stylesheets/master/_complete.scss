@@ -1,0 +1,93 @@
+.master-complete {
+  height: 100vh;
+  width: 100%;
+  &_header {
+    text-align: center;
+    color: gray;
+    letter-spacing: 5px;
+  }
+  &_main {
+    height: 90%;
+    width: 60%;
+    border: 1px solid gray;
+    margin: 0 auto;
+  }
+  &_in {
+    text-align: center;
+  }
+  &_camp {
+    display: flex;
+    justify-content: space-around;
+  }
+  &_title {
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #ea352d;
+  }
+  &_price {
+    width: 40%;
+    height: 40px;
+    margin: 15px auto;
+    font-weight: 600;
+    color: #ffffff;
+    letter-spacing: 3px;
+    background: #ea352d;
+    line-height: 40px;
+  }
+  &_user {
+    font-size: 18px;
+    font-weight: 600;
+    color: gray;
+  }
+  &_name {
+    font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  }
+  &_camp1 {
+    text-align: center;
+    margin-top: 10px;
+  }
+  &_area {
+    font-size: 18px;
+    font-weight: 600;
+    color: gray;
+    &_name {
+      margin-bottom: 20px;
+    }
+  }
+  &_camp2 {
+    text-align: center;
+    margin-top: 10px;
+  }
+  &_item {
+    font-size: 18px;
+    font-weight: 600;
+    color: gray;
+    &_name {
+      margin-bottom: 20px;
+    }
+  }
+  &_under {
+    text-align: center;
+    margin-top: 60px;
+  }
+  &_text {
+    font-size: 17px;
+    color: green;
+    text-decoration: underline;
+  }
+  &_button {
+    margin: 70px auto;
+    background: gray;
+    height: 50px;
+    width: 40%;
+    line-height: 50px;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+.btn-top-page {
+  color: #ffffff;
+}
