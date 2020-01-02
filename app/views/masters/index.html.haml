@@ -27,9 +27,12 @@
       - if master.state == 1
         = form_for(master, url: master_path(master.id),method:'PATCH' ) do |f|
           = f.hidden_field :state ,value:2
-          = f.submit "返却完了"
+          = f.submit "返却待ち"
       - else
         返却済み
+        = form_for(master, url: master_path(master.id),method:'PATCH' ) do |f|
+          = f.hidden_field :state ,value:1
+          = f.submit "戻す"
     - @prices << (master.item.price)
 .price-all
   合計売り上げ

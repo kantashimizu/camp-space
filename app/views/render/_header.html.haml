@@ -2,10 +2,12 @@
   .header-top
     -if user_signed_in?
       - if current_user.id == 1
-        = link_to "管理者ページ",masters_path,class:"master-link"
+        - @masters = Master.where(state:1)
+        = link_to "管理者ページ(現在の返却待ちは#{@masters.length}件です)",masters_path,class:"master-link"
+       
     .header-top_text1
       - if user_signed_in?
-        = link_to "L O G O U T", destroy_user_session_path, method: :delete
+        = link_to "L O G O U T", destroy_user_session_path, method: :delete, data: {confirm: "ログアウトします。"}
       - else
         = link_to "L O G I N", new_user_session_path
     .header-top_text2
@@ -21,7 +23,6 @@
     .header-main_content
       - if user_signed_in?
         .content-text
-          %a トップ
           %a{href: "#equipmentset"}｜　用品　｜
           %a{href: "#campset"} キャンプ場　｜
           %a{href: "#userguide"} ご利用ガイド
