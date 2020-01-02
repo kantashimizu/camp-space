@@ -8,4 +8,4 @@
       = f.hidden_field :item_id ,value:cart.item_id
       = f.hidden_field :state ,value:1
       = f.hidden_field :user_id ,value:current_user.id
-      = f.submit "購入する"
+      = f.submit "購入する", data: {confirm: "本当に購入して宜しいですか？"}

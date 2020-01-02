@@ -15,6 +15,9 @@ html {
       .master-link{
         color: white;
       }
+      .text{
+        color: white;
+      }
       .header-top_text1{
         float: right;
         margin-right: 50px;
@@ -44,7 +47,8 @@ html {
         line-height: 300px;
         font-size: 1rem;
         .pay-link{
-          color: red;
+          color:#333;
+          font-weight: bold;
         }
       }
       .cart-box{
