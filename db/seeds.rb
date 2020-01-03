@@ -93,10 +93,10 @@ Image.create!(
       image: 'https://www.campjo.com/images/camp/000135_5.jpg',
       area_id: '1',
     },
-    # {
-    #   image: 'https://www.campjo.com/images/camp/000828_1.jpg',
-    #   area_id: '2',
-    # },
+    {
+      image: 'https://www.campjo.com/images/camp/000828_1.jpg',
+      area_id: '2',
+    },
     {
       image: 'https://www.campjo.com/images/camp/000828_2.jpg',
       area_id: '2',
