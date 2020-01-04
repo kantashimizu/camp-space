@@ -95,83 +95,83 @@ Image.create!(
     },
     {
       image: 'https://www.campjo.com/images/camp/000828_1.jpg',
-      area_id: '2',
+      area_id: '11',
     },
     {
       image: 'https://www.campjo.com/images/camp/000828_2.jpg',
-      area_id: '2',
+      area_id: '11',
     },
     {
       image: 'https://www.campjo.com/images/camp/000828_3.jpg',
-      area_id: '2',
+      area_id: '11',
     },
     {
       image: 'https://www.campjo.com/images/camp/000828_4.jpg',
-      area_id: '2',
+      area_id: '11',
     },
     {
       image: 'https://www.campjo.com/images/camp/000828_5.jpg',
-      area_id: '2',
+      area_id: '11',
     },
     {
       image: 'https://www.campjo.com/images/camp/000795_1.jpg',
-      area_id: '3',
+      area_id: '21',
     },
     {
       image: 'https://www.campjo.com/images/camp/000795_2.jpg',
-      area_id: '3',
+      area_id: '21',
     },
     {
       image: 'https://www.campjo.com/images/camp/000795_3.jpg',
-      area_id: '3',
+      area_id: '21',
     },
     {
       image: 'https://www.campjo.com/images/camp/000795_4.jpg',
-      area_id: '3',
+      area_id: '21',
     },
     {
       image: 'https://www.campjo.com/images/camp/000795_5.jpg',
-      area_id: '3',
+      area_id: '21',
     },
     {
       image: 'https://www.campjo.com/images/camp/000064_1.jpg',
-      area_id: '4',
+      area_id: '31',
     },
     {
       image: 'https://www.campjo.com/images/camp/000064_2.jpg',
-      area_id: '4',
+      area_id: '31',
     },
     {
-      image: '1.jpeg',
-      area_id: '4',
+      image: 'https://www.campjo.com/images/camp/000135_1.jpg',
+      area_id: '31',
     },
     {
       image: 'https://www.campjo.com/images/camp/000064_3.jpg',
-      area_id: '4',
+      area_id: '31',
     },
     {
       image: 'https://www.campjo.com/images/camp/000040_1.jpg',
-      area_id: '4',
+      area_id: '31',
     },
     {
       image: 'https://www.campjo.com/images/camp/000040_2.jpg',
-      area_id: '5',
+      area_id: '41',
     },
     {
       image: 'https://www.campjo.com/images/camp/000040_3.jpg',
-      area_id: '5',
+      area_id: '41',
     },
     {
       image: 'https://www.campjo.com/images/camp/000040_4.jpg',
-      area_id: '5',
+      area_id: '41',
     },
     {
       image: 'https://www.campjo.com/images/camp/000040_5.jpg',
-      area_id: '5',
+      area_id: '41',
     },
     {
       image: 'https://www.campjo.com/images/camp/000040_7.jpg',
-      area_id: '5',
+      area_id: '41',
     }
   ]
 )
@@ -185,42 +185,42 @@ SubItem.create!(
     {
       name: 'サーカスTC',
       image: 'https://campdays.jp/upload/save_image/07291445_5b5d5497370bb.jpg',
-      item_id: '2'
+      item_id: '11'
     },
     {
       name: 'アメニティードームS',
       image: 'https://campdays.jp/upload/save_image/07101417_5b444179d67d3.png',
-      item_id: '3'
+      item_id: '21'
     },
     {
       name: 'アメニティードームL',
       image: 'https://campdays.jp/upload/save_image/07101416_5b4441445a4e3.png',
-      item_id: '4'
+      item_id: '31'
     },
     {
       name: 'アスガルド7.1',
       image: 'https://campdays.jp/upload/save_image/07101413_5b44407150026.png',
-      item_id: '5'
+      item_id: '41'
     },
     {
       name: 'アスガルド12.6',
       image: 'https://campdays.jp/upload/save_image/07101414_5b4440b7733eb.png',
-      item_id: '5'
+      item_id: '41'
     },
     {
       name: 'アスガルド19.6',
       image: 'https://campdays.jp/upload/save_image/07101415_5b4441022cd35.png',
-      item_id: '4'
+      item_id: '31'
     },
     {
       name: 'ウインズライトドーム/W270',
       image: 'https://campdays.jp/upload/save_image/07101419_5b4441ee4789e.png',
-      item_id: '3'
+      item_id: '31'
     },
     {
       name: 'スパイラル ホロウバッグ#3',
       image: 'https://campdays.jp/upload/save_image/04191600_53521f177e4f5.jpg',
-      item_id: '2'
+      item_id: '11'
     },
     {
       name: 'ホロウバッグ #5',
@@ -235,37 +235,37 @@ SubItem.create!(
     {
       name: 'ファミリーバッグ #1',
       image: 'https://campdays.jp/upload/save_image/04211806_5354dfb2f0958.jpg',
-      item_id: '2'
+      item_id: '11'
     },
     {
       name: 'アルミローコット',
       image: 'https://campdays.jp/upload/save_image/10030925_5d953ffcec991.png',
-      item_id: '3'
+      item_id: '21'
     },
     {
       name: 'リッジレスト ソーライト(R)',
       image: 'https://campdays.jp/upload/save_image/07120727_5b468454e1f6a.jpg',
-      item_id: '4'
+      item_id: '31'
     },
     {
       name: '焚火台L&ベースプレート',
       image: 'https://campdays.jp/upload/save_image/04220037_53553b4f58bd3.jpg',
-      item_id: '5'
+      item_id: '41'
     },
     {
       name: 'パワーハウスLPツーバーナー',
       image: 'https://campdays.jp/upload/save_image/04191609_5352211f8a47e.jpg',
-      item_id: '4'
+      item_id: '31'
     },
     {
       name: 'ハイパワー2バーナー',
       image: 'https://campdays.jp/upload/save_image/07071029_577db07b7cd7a.jpg',
-      item_id: '3'
+      item_id: '21'
     },
     {
       name: 'カセットフー マーベラス',
       image: 'https://campdays.jp/upload/save_image/04212150_535514145fb97.jpg',
-      item_id: '2'
+      item_id: '11'
     },
     {
       name: 'レギュレーターストーブ',
@@ -275,37 +275,37 @@ SubItem.create!(
     {
       name: 'コンパクトキッチンテーブル',
       image: 'https://campdays.jp/upload/save_image/04212039_53550381a23b2.jpg',
-      item_id: '2'
+      item_id: '11'
     },
     {
       name: 'アルミロールテーブルコンパクト',
       image: 'https://campdays.jp/upload/save_image/07161352_5789bda2f3f55.jpg',
-      item_id: '3'
+      item_id: '21'
     },
     {
       name: 'ステンレスパーコレーター6カップ',
       image: 'https://campdays.jp/upload/save_image/04212233_53551e477b33d.jpg',
-      item_id: '4'
+      item_id: '31'
     },
     {
       name: 'ウッドライン グランドラック(ナチュラル)',
       image: 'https://campdays.jp/upload/save_image/04212311_5355270768770.jpg',
-      item_id: '5'
+      item_id: '41'
     },
     {
       name: '【新品】BBQ用焼き網',
       image: 'https://campdays.jp/upload/save_image/10030945_5d9544c00eae3.jpg',
-      item_id: '4'
+      item_id: '31'
     },
     {
       name: '2500ノーススターLPガスランタン',
       image: 'https://campdays.jp/upload/save_image/04191611_535221aef22d6.jpg',
-      item_id: '3'
+      item_id: '21'
     },
     {
       name: 'ジェントスLEDランタン',
       image: 'https://campdays.jp/upload/save_image/07061732_577cc21b6240e.jpg',
-      item_id: '2'
+      item_id: '11'
     },
     {
       name: 'ルミエールランタン',
@@ -315,37 +315,37 @@ SubItem.create!(
     {
       name: 'ソリッドステートランタン ほおずき',
       image: 'https://campdays.jp/upload/save_image/04212331_53552bb821b13.jpg',
-      item_id: '2'
+      item_id: '11'
     },
     {
       name: 'ランタンスタンド',
       image: 'https://campdays.jp/upload/save_image/06281128_5b3447c79db03.png',
-      item_id: '3'
+      item_id: '21'
     },
     {
       name: 'FDチェア',
       image: 'https://campdays.jp/upload/save_image/04191602_53521f753da5b.jpg',
-      item_id: '4'
+      item_id: '31'
     },
     {
       name: 'FD KIDSチェア RD',
       image: 'https://campdays.jp/upload/save_image/04212047_5355053d67cde.jpg',
-      item_id: '5'
+      item_id: '41'
     },
     {
       name: 'チェアワン',
       image: 'https://campdays.jp/upload/save_image/07111502_578336593fd81.jpg',
-      item_id: '4'
+      item_id: '31'
     },
     {
       name: 'ナチュラルウッドロールテーブル110',
       image: 'https://campdays.jp/upload/save_image/06201516_57678a3ea2c34.jpg',
-      item_id: '3'
+      item_id: '21'
     },
     {
       name: 'ナチュラルモザイク リビングテーブル/180',
       image: 'https://campdays.jp/upload/save_image/04191603_53521fb5d8d61.jpg',
-      item_id: '2'
+      item_id: '11'
     },
     {
       name: 'ウッドライン グランドテーブル',
@@ -355,37 +355,37 @@ SubItem.create!(
     {
       name: '【Basicタイプ】テーブル＆チェア(2人用)',
       image: 'https://campdays.jp/upload/save_image/07101352_5b443b9b61749.png',
-      item_id: '2'
+      item_id: '11'
     },
     {
       name: '【Basicタイプ】テーブル＆チェア(4人用)',
       image: 'https://campdays.jp/upload/save_image/07101345_5b4439e52da8d.png',
-      item_id: '3'
+      item_id: '21'
     },
     {
       name: '【Lowタイプ】テーブル＆チェア(2人用)',
       image: 'https://campdays.jp/upload/save_image/07101355_5b443c40235c1.png',
-      item_id: '4'
+      item_id: '31'
     },
     {
       name: 'Lowタイプ】テーブル＆チェア(4人用)',
       image: 'https://campdays.jp/upload/save_image/07101406_5b443ef012d56.png',
-      item_id: '5'
+      item_id: '41'
     },
     {
       name: '(サーカスTC専用)フロアマット',
       image: 'https://campdays.jp/upload/save_image/07281432_5b5bfff5a2997.jpg',
-      item_id: '4'
+      item_id: '31'
     },
     {
       name: '(アメニティドームS専用)フロアマット',
       image: 'https://campdays.jp/upload/save_image/07281355_5b5bf744bc07a.jpg',
-      item_id: '3'
+      item_id: '21'
     },
     {
       name: '(アメニティドームL専用)フロアマット',
       image: 'https://campdays.jp/upload/save_image/07281127_5b5bd48685c67.jpg',
-      item_id: '2'
+      item_id: '11'
     },
     {
       name: 'クロノスドーム4型専用)フロアマット',
@@ -395,17 +395,17 @@ SubItem.create!(
     {
       name: 'アルミローコット',
       image: 'https://campdays.jp/upload/save_image/10030925_5d953ffcec991.png',
-      item_id: '2'
+      item_id: '11'
     },
     {
       name: 'メキシカンラグ',
       image: 'https://campdays.jp/upload/save_image/04302131_5360ed2f23646.jpg',
-      item_id: '3'
+      item_id: '21'
     },
     {
       name: 'オールランドキャリーワゴン',
       image: 'https://campdays.jp/upload/save_image/04220122_535545ada916f.jpg',
-      item_id: '4'
+      item_id: '31'
     }
   ]
 )
