@@ -8,7 +8,7 @@
     購入確認
   = form_for(@master, url: masters_path,method:'POST' ) do |f|
     - @carts.each do |cart| 
-      - if cart.item_id
+      - if cart.item_id || cart.area_id
         .user-box
           .user-box_title
             ユーザー名
@@ -29,7 +29,6 @@
             = f.hidden_field :item_id ,value:cart.item_id
             = f.hidden_field :state ,value:1
             = f.hidden_field :user_id ,value:current_user.id
-      - if cart.area_id
         .area-box
           .area-box_title
             キャンプ場
