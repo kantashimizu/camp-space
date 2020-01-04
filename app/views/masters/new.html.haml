@@ -8,20 +8,7 @@
     購入確認
   = form_for(@master, url: masters_path,method:'POST' ) do |f|
     - @carts.each do |cart| 
-      - if cart.area_id
-        .area-box
-          .area-box_title
-            キャンプ場
-          .area-box_name
-            = cart.area.name
-          .area-box_image
-            = image_tag cart.area.images[0].image, width:"300px"
-          .area-box_text
-            = cart.area.text
-            = f.hidden_field :area_id ,value:cart.area_id
-        = f.submit "購入する",class:"purchase-button", data: {confirm: "本当に購入して宜しいですか？"}
-
-      - elsif cart.item_id
+      - if cart.area_id && cart.item_id
         .user-box
           .user-box_title
             ユーザー名
@@ -39,8 +26,19 @@
             = "¥#{cart.item.price}"
           .item-box_text
             = cart.item.text
+        .area-box
+          .area-box_title
+            キャンプ場
+          .area-box_name
+            = cart.area.name
+          .area-box_image
+            = image_tag cart.area.images[0].image, width:"300px"
+          .area-box_text
+            = cart.area.text
+            = f.hidden_field :area_id ,value:cart.area_id
             = f.hidden_field :item_id ,value:cart.item_id
             = f.hidden_field :state ,value:1
             = f.hidden_field :user_id ,value:current_user.id
+        = f.submit "購入する",class:"purchase-button", data: {confirm: "本当に購入して宜しいですか？"}
 
 = render 'render/footer'
