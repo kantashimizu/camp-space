@@ -8,19 +8,20 @@
   }
   .cart-box{
     text-align: center;
+    margin-top: 2rem;
     .box-title{
       display: flex;
       background-color: rgb(236, 232, 232);
       margin-top: 5px;
       color: #333333;
       .box-title_name{
-        width: 200px;
+        width: 295px;
       }
       .box-title_destroy{
         width: 80px;
       }
       .box-title_image{
-        width: 100px;
+        width: 136px;
       }
       .box-title_price{
         width: 80px;
@@ -35,8 +36,9 @@
       display: flex;
       border: solid 1px rgb(243, 239, 239);
       .box-item_name{
-        width: 200px;
+        width: 300px;
         border-right: solid 1px rgb(243, 239, 239);
+        color: #333333;
       }
       .box-item_destroy{
         width: 80px;
@@ -51,14 +53,20 @@
         }
       }
       .box-item_price{
-        width: 80px;
+        width: 90px;
         border-right: solid 1px rgb(243, 239, 239);
       }
       .box-item_text{
         line-height: normal;
-        font-size: 0.8rem;
+        font-size: 0.7rem;
         width: 500px;
         text-align: left;
+      }
+      .box-area_name {
+        width: 300px;
+        border-right: solid 1px rgb(243, 239, 239);
+        color: #333333;
+        font-size: 14px;
       }
     }
   }
