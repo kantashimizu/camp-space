@@ -39,7 +39,7 @@ class MastersController < ApplicationController
   end
 
   def complete
-    @masters = Master.all
+    @masters = Master.where(user_id:current_user.id)
   end
   
   private
