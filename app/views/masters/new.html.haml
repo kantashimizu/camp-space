@@ -8,7 +8,7 @@
     購入確認
   = form_for(@master, url: masters_path,method:'POST' ) do |f|
     - @carts.each do |cart| 
-      - if cart.area_id and cart.item_id
+      - if cart.area_id != nil && cart.item_id != nil
         .user-box
           .user-box_title
             ユーザー名
