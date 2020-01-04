@@ -14,6 +14,7 @@ html {
       line-height: 40px;
       .master-link{
         color: white;
+        margin-left: 10px;
       }
       .text{
         color: white;
@@ -48,6 +49,7 @@ html {
         font-size: 1rem;
         .content-text{
           display: flex;
+          width: 400px;
           .pay-link{
             color:#333;
             font-weight: bold;
@@ -57,14 +59,16 @@ html {
       .cart-box{
         padding-top: 2rem;
         position: relative;
-        margin-left: 44rem;
+        width: 40rem;
+        display: inline-block;
+        text-align: right;
         .cart-mark{
           width: 3rem;
           height: 3rem;
           background-color: rgb(167, 164, 164);
           border-radius: 50%;
           position: absolute;
-          left: -20px;
+          right: 5rem;
           text-align: center;
           line-height: 3rem;
           color: white;
@@ -271,6 +275,11 @@ html {
           padding: 0px;
           color: #666;
           font-size: 13px;
+        }
+        .camp-p {
+          text-align: left;
+          color: #666;
+          font-size: 11.8px;
         }
       }
     }
