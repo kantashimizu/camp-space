@@ -19,7 +19,7 @@
           .area-box_text
             = cart.area.text
             = f.hidden_field :area_id ,value:cart.area_id
-        = f.submit "購入する",class:"purchase-button", data: {confirm: "本当に購入して宜しいですか？"}
+        
 
       - elsif cart.item_id
         .user-box
@@ -42,5 +42,5 @@
             = f.hidden_field :item_id ,value:cart.item_id
             = f.hidden_field :state ,value:1
             = f.hidden_field :user_id ,value:current_user.id
-
+            = f.submit "購入する",class:"purchase-button", data: {confirm: "本当に購入して宜しいですか？"}
 = render 'render/footer'
