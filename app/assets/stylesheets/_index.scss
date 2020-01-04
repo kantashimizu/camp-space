@@ -46,9 +46,12 @@ html {
       .header-main_content{
         line-height: 300px;
         font-size: 1rem;
-        .pay-link{
-          color:#333;
-          font-weight: bold;
+        .content-text{
+          display: flex;
+          .pay-link{
+            color:#333;
+            font-weight: bold;
+          }
         }
       }
       .cart-box{
