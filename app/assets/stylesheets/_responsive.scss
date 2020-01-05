@@ -1,0 +1,45 @@
+@media screen and (min-width:1000px) {
+  /* 画面サイズ 1000px以上から適用 */
+  .guide-box {
+    list-style: none;
+    padding: 0 30rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    width: 100%;
+    position: static;
+    .header-main {
+      width: 100%;
+      a {
+        height: 100px;
+        width: 100px;
+        .header-main_log {
+          height: 0;
+          width: 0;
+          img {
+            height: 150px;
+            margin-left: 150px;
+          }
+        }
+      }
+    }
+    .main {
+      position: relative;
+      .main-text {
+        left: 60px;
+      }
+      .main-text2 {
+        width: 95%;
+      }
+      .camp-content2 {
+        width: 100%;
+        float: none;
+      }
+    }
+    .guide-box {
+      width: 100%;
+    }
+  }
+}
