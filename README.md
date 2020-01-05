@@ -27,6 +27,23 @@ if @master.save
     cart.destroy
  end
  ```
+ ・areとitemの２種類の商品を扱っているため1度の購入作業でカートテーブルに２つのレコードが生成されます。<br>
+ その二つのレコードを購入時にmasterテーブルに１レコードにまとめました。<br>
+ 以下が条件分岐のコードです。
+ ```
+ = form_for(@master, url: masters_path,method:'POST' ) do |f|
+    - @carts.each do |cart| 
+      - if cart.item_id 
+        .user-box
+          .user-box_title
+ ```
+ ```
+ - if cart.area_id
+        .area-box
+          .area-box_title
+            キャンプ場
+ ```
+ 
 
 # README
 
