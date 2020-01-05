@@ -19,7 +19,7 @@ TECH::EXPERTの全カリキュラムが終了し、実際に今までの学習�
 
 ## 工夫した点
 
-sessionを使わずにカート機能を実装した事です。カートに入れ数日後にも保管されているサービスが多かったので同じ様DBで扱う様にしました。
+・sessionを使わずにカート機能を実装した事です。<br>カートに入れ数日後にも保管されているサービスが多かったので同じ様DBで扱う様にしました。<br>
 以下の様に購入時にカート内のデーターを削除する様にしております。
 ```
 if @master.save
@@ -43,10 +43,9 @@ if @master.save
 |password|string|null: false|
 
 ### Association
-- has_many :masters
-- has_many :areas, through: :masters
-- has_many :items, through: :masters
-
+- belongs_to :master , foreign_key: true,optional: true
+- has_many :carts
+  
 ## areasテーブル
 |Column|Type|Options|
 |------|----|-------|
@@ -55,10 +54,9 @@ if @master.save
 |tel|string|
 |text|string|null: false|
 
+- has_many :images
 - has_many :masters
-- has_many :users, through: :masters
-- has_many :items, through: :masters
-
+- has_many :carts
 
 ## itemsテーブル
 |Column|Type|Options|
@@ -67,19 +65,17 @@ if @master.save
 |name||null: false|
 |sub_item|references|null: false, foreign_key: true|
 
+- has_many :sub_items
 - has_many :masters
-- has_many :users, through: :masters
-- has_many :areas, through: :masters
-- belongs_to :sub_item
-- belongs_to :image
+- has_many :carts
 
 ## imagesテーブル
 |Column|Type|Options|
 |------|----|-------|
 |image|intger|null: false|
-|item|references|null: false, foreign_key: true|
+|area|references|null: false,foreign_key: true|
 
-- has_many :items
+- has_many :areas
 
 ## sub_itemsテーブル
 |Column|Type|Options|
@@ -87,7 +83,20 @@ if @master.save
 |name||integer|null: false|
 |image||integer|null: false|
 
-- has_many :items
+- belongs_to :item
+
+## cartssテーブル
+|Column|Type|Options|
+|------|----|-------|
+|user|references|null: false,foreign_key: true|
+|item|references|null: false,foreign_key: true|
+|area|references|null: false,foreign_key: true|
+|status|integer|null:false|
+
+- belongs_to :user
+- belongs_to :item
+- belongs_to :area
+
 
 ## mastersテーブル
 |Column|Type|Options|
