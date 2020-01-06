@@ -32,6 +32,10 @@ TECH::EXPERTの全カリキュラムが終了し、実際に今までの学習�
 
 ![image](https://user-images.githubusercontent.com/57335336/71830480-2a658c00-30ea-11ea-8d0b-6d4aad0f397e.png)
 
+・カートに入れた商品を確認できます
+
+![demo](https://i.gyazo.com/68415f056d7c4f8d1424670d45fce0c8.mp4)
+
 
 ## 工夫した点
 
