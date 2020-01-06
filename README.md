@@ -1,6 +1,6 @@
 # このアプリについて
 
-## CAMP-SPACEとは
+## :grey_question: CAMP-SPACEとは
 キャンプ用品のレンタル、現地宅配サービスです。
 
 ## 概要
@@ -24,7 +24,7 @@ TECH::EXPERTの全カリキュラムが終了し、実際に今までの学習�
 
 <img width="1191" alt="campspace" src="https://user-images.githubusercontent.com/57335336/71817355-f037c280-30c8-11ea-82ec-74db87b5cac5.png">
 
-:one: 好みのキャンプセットを選びカートに入れます
+:one: 会員登録をし、好みのキャンプセットを選びカートに入れます
 
 <img width="1275" alt="item_show" src="https://user-images.githubusercontent.com/57335336/71829951-05244e00-30e9-11ea-8e93-23f805bf8100.png">
 
@@ -32,11 +32,29 @@ TECH::EXPERTの全カリキュラムが終了し、実際に今までの学習�
 
 ![image](https://user-images.githubusercontent.com/57335336/71830480-2a658c00-30ea-11ea-8d0b-6d4aad0f397e.png)
 
-・カートに入れた商品を確認できます(削除も可)
+:white_check_mark: カートに入れた商品を確認できます(削除も可)
 
+<img width="1280" alt="cart" src="https://user-images.githubusercontent.com/57335336/71833989-77009580-30f1-11ea-836f-2e3bacb88417.png">
 
+:three: クレジットカードを登録し購入画面に進みます
 
-## 工夫した点
+![image](https://user-images.githubusercontent.com/57335336/71834288-3a816980-30f2-11ea-949b-2f69c3456b02.png)
+
+:four: 購入完了です！
+
+![image](https://user-images.githubusercontent.com/57335336/71834412-83d1b900-30f2-11ea-87cf-f68de51ed8f2.png)
+
+:policeman: 管理者アカウントを作成し、注文の情報、レンタル状況を確認できます<br>
+
+- 管理者情報
+:email: katan-0507@i.softbank.jp
+:lock: kanta0507
+
+<img width="1279" alt="payjptest" src="https://user-images.githubusercontent.com/57335336/71835201-4d953900-30f4-11ea-8be6-c4b9798ff05e.png">
+
+<img width="1273" alt="payjptest" src="https://user-images.githubusercontent.com/57335336/71835354-a238b400-30f4-11ea-8dbd-e9195de2b733.png">
+
+## :atom: 工夫した点
 
 ・sessionを使わずにカート機能を実装した事です。<br>カートに入れ数日後にも保管されているサービスが多かったので同じ様DBで扱う様にしました。<br>
 以下の様に購入時にカート内のデーターを削除する様にしております。
