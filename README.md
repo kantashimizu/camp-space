@@ -24,6 +24,10 @@ TECH::EXPERTの全カリキュラムが終了し、実際に今までの学習�
 
 <img width="1191" alt="campspace" src="https://user-images.githubusercontent.com/57335336/71817355-f037c280-30c8-11ea-82ec-74db87b5cac5.png">
 
+① 好みのキャンプセットを選びカートに入れます
+
+<img width="1275" alt="item_show" src="https://user-images.githubusercontent.com/57335336/71829951-05244e00-30e9-11ea-8e93-23f805bf8100.png">
+
 
 ## 工夫した点
 
