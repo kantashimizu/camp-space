@@ -24,17 +24,16 @@ TECH::EXPERTの全カリキュラムが終了し、実際に今までの学習�
 
 <img width="1191" alt="campspace" src="https://user-images.githubusercontent.com/57335336/71817355-f037c280-30c8-11ea-82ec-74db87b5cac5.png">
 
-１ 好みのキャンプセットを選びカートに入れます
+:one: 好みのキャンプセットを選びカートに入れます
 
 <img width="1275" alt="item_show" src="https://user-images.githubusercontent.com/57335336/71829951-05244e00-30e9-11ea-8e93-23f805bf8100.png">
 
-２ 配送先のキャンプを指定します
+:two: 配送先のキャンプを指定します
 
 ![image](https://user-images.githubusercontent.com/57335336/71830480-2a658c00-30ea-11ea-8d0b-6d4aad0f397e.png)
 
 ・カートに入れた商品を確認できます(削除も可)
 
-![506ef92efe9724f854772daf93958d54](https://user-images.githubusercontent.com/57335336/71831722-d314eb00-30ec-11ea-8601-4038086fa6e8.gif)
 
 
 ## 工夫した点
