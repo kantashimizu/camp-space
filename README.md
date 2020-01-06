@@ -46,8 +46,8 @@ TECH::EXPERTの全カリキュラムが終了し、実際に今までの学習�
 
 :policeman: 管理者アカウントを作成し、注文の情報、レンタル状況を確認できます<br>
 
-- 管理者情報
-:email: katan-0507@i.softbank.jp
+- 管理者情報<br>
+:email: katan-0507@i.softbank.jp<br>
 :lock: kanta0507
 
 <img width="1279" alt="payjptest" src="https://user-images.githubusercontent.com/57335336/71835201-4d953900-30f4-11ea-8be6-c4b9798ff05e.png">
