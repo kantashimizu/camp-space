@@ -30,42 +30,42 @@ Item.create!(
 Area.create!(
   [
     {
-      address: '東京都大田区',
-      name: 'デイキャンプ場',
+      address: 'JR越生駅',
+      name: '大高取山(376m)／埼玉',
       tel: '123-4566-7890',
-      text: 'とても使いやすいキャンプ場です。岩でできた椅子とテーブルもあり、水道もバーベキュー台のすぐ近くなので便利です。',
+      text: '適度なアップダウンや尾根歩きがあり、短時間でも登山らしさを味わうことができるコース。山頂は展望がありませんが、少し下った幕岩や展望台は筑波山や都心のビル群などの眺望が良く、近くに見事な梅林があるので、花の季節には寄ってみてください。',
       latitude: '35.585970',
       longitude: '139.706624',
     },
     {
-      address: '栃木県さくら市',
-      name: '太陽の丘オートキャンプ場',
+      address: 'JR長瀞駅',
+      name: '宝登山(497m)／埼玉',
       tel: '000-1111-2222',
-      text: 'キャンプ場は背の高い雑木林に囲まれていて自然に溢れ、静かで、街近のキャンプ場であることを全く感じさせません。',
+      text: '山頂からは両神山や秩父市内を見渡すことができ、春はロウバイや梅、桜の花が見事。ロープウェイを利用すれば山頂まで徒歩5分と気軽に山を楽しむこともできます。',
       latitude: '36.730133',
       longitude: '140.037138',
     },
     {
-      address: '群馬県吾妻郡',
-      name: 'ミリーズラブ',
+      address: '大輪バス停',
+      name: '三峰山(1,066m)／埼玉',
       tel: '123-4567-8900',
-      text: '日本初、犬連れキャンパー必見のノーリードで過ごせるキャンプ場。愛犬家のオーナーが自分たちの手で作り上げた愛犬家の夢の詰まったオートキャンプ場です。',
+      text: '大輪バス停から三峯神社まで表参道を往復するコース。参道とは言え、標高差が700m近くある九十九折れの登山道で、登山初心者でなくても登り応えがあります。途中に美しい清浄の滝や渓谷があり、目を楽しませてくれます。',
       latitude: '36.484803',
       longitude: '138.531671',
     },
     {
-      address: '茨城県石岡市',
-      name: '石岡市つくばねオートキャンプ場',
+      address: 'さわらびの湯バス停',
+      name: '棒ノ折山(969m)／埼玉',
       tel: '123-4567-8900',
-      text: '筑波山のふもとにある自然豊かなキャンプ場。1万平方メートルもある広々とした芝生の広場があり、そりすべりやバドミントンサッカーなどで楽しむことが出来る。',
+      text: '山頂は秩父の山々を見渡せる180度の大展望。帰りは尾根道を通って下山しましょう。バス停そばに温泉があるので、入浴して帰ることができます。',
       latitude: '36.233629',
       longitude: '140.125677',
     },
     {
-      address: '群馬県吾妻郡',
-      name: '北軽井沢スイートグラス',
+      address: '相模湖駅',
+      name: '小仏城山(670m)／東京',
       tel: '123-4567-8900',
-      text: '浅間山のふもとに広がる約3万坪の広大な敷地にあるオートキャンプ場。その広い場内にはアスレチック、トランポリン広場、瞑想用のツリーハウス、ドッグランなど数多くの施設があり、一日では遊びきれない程です。',
+      text: '高尾山の隣にある山で、裏高尾の静かな山歩きが楽しめるコースです。山頂は広々としていて高尾山などの眺めが良く、茶屋が2軒あるのでランチ休憩に最適。高尾山方面へ縦走して下山するのもおすすめです。',
       latitude: '36.460201',
       longitude: '138.576341',
     }
@@ -74,43 +74,43 @@ Area.create!(
 Image.create!(
   [
     {
-      image: 'https://www.campjo.com/images/camp/000135_1.jpg',
+      image: 'http://www.jac.or.jp/oyako/f15/img/p204010/11_ootakatori_map.png',
       area_id: '1',
     },
     {
-      image: 'https://www.campjo.com/images/camp/000135_2.jpg',
+      image: 'https://mitchie-m.com/blog/wp-content/uploads/2016/05/DSC03189.jpg',
       area_id: '1',
     },
     {
-      image: 'https://www.campjo.com/images/camp/000135_3.jpg',
+      image: 'http://blog-imgs-84.fc2.com/o/k/u/okumusazu/s8570045a.jpg',
       area_id: '1',
     },
     {
-      image: 'https://www.campjo.com/images/camp/000135_4.jpg',
+      image: 'http://wotcool.com/wp-content/uploads/2017/08/P8310835-1024x768.jpg',
       area_id: '1',
     },
     {
-      image: 'https://www.campjo.com/images/camp/000135_5.jpg',
+      image: 'https://cdn.4travel.jp/img/tcs/t/album/src/10/51/08/src_10510896.jpg?updated_at=1287142649',
       area_id: '1',
     },
     {
-      image: 'https://www.campjo.com/images/camp/000828_1.jpg',
+      image: 'http://hodosan.sakura.ne.jp/hodosan/wp-content/uploads/2015/11/hodomt.png',
       area_id: '11',
     },
     {
-      image: 'https://www.campjo.com/images/camp/000828_2.jpg',
+      image: 'https://s3cdn.sotoasobi.net/outfitter/wp-content/uploads/20170613180418/pixta_13931924_M_mini1.jpg',
       area_id: '11',
     },
     {
-      image: 'https://www.campjo.com/images/camp/000828_3.jpg',
+      image: 'https://www.nagatoro.gr.jp/wp-content/uploads/2019/11/DSC_0323.jpg',
       area_id: '11',
     },
     {
-      image: 'https://www.campjo.com/images/camp/000828_4.jpg',
+      image: 'http://www.gdexr.com/shareblog/wp-content/uploads/2015/07/IMGP1664.jpg',
       area_id: '11',
     },
     {
-      image: 'https://www.campjo.com/images/camp/000828_5.jpg',
+      image: 'https://yama-suki.blue/wp-content/uploads/2018/11/20181111_%E5%AE%9D%E7%99%BB%E5%B1%B1_Full_004_comp.jpg',
       area_id: '11',
     },
     {
@@ -134,43 +134,43 @@ Image.create!(
       area_id: '21',
     },
     {
-      image: 'https://www.campjo.com/images/camp/000064_1.jpg',
+      image: 'http://vill.mitsue.nara.jp/common/images/kanko/sizen/yama/route_img_b.jpg',
       area_id: '31',
     },
     {
-      image: 'https://www.campjo.com/images/camp/000064_2.jpg',
+      image: 'https://www.yamagirl.net/adm/wp-content/uploads/2019/03/miuneyama-36.jpg',
       area_id: '31',
     },
     {
-      image: 'https://www.campjo.com/images/camp/000135_1.jpg',
+      image: 'https://yy5zymc9.user.webaccel.jp/wp-content/uploads/2019/02/miunesan1-4.jpg',
       area_id: '31',
     },
     {
-      image: 'https://www.campjo.com/images/camp/000064_3.jpg',
+      image: 'https://www.yamagirl.net/adm/wp-content/uploads/2019/03/miuneyama-1.jpg',
       area_id: '31',
     },
     {
-      image: 'https://www.campjo.com/images/camp/000040_1.jpg',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMHqv0SeaO1D1K5AUAI1GGbTG6xvYUGKbDUgsSm3j4ECmbntVA&s',
       area_id: '31',
     },
     {
-      image: 'https://www.campjo.com/images/camp/000040_2.jpg',
+      image: 'http://www.yamaquest.com/image/guide/105/g_105.jpg',
       area_id: '41',
     },
     {
-      image: 'https://www.campjo.com/images/camp/000040_3.jpg',
+      image: 'https://bluesky.rash.jp/blog/wp-content/uploads/2011/11/6388693133_bd85437977.jpg',
       area_id: '41',
     },
     {
-      image: 'https://www.campjo.com/images/camp/000040_4.jpg',
+      image: 'http://www5d.biglobe.ne.jp/~isom/300/bouno1.JPG',
       area_id: '41',
     },
     {
-      image: 'https://www.campjo.com/images/camp/000040_5.jpg',
+      image: 'https://yy5zymc9.user.webaccel.jp/wp-content/uploads/2017/09/OI000069.jpg',
       area_id: '41',
     },
     {
-      image: 'https://www.campjo.com/images/camp/000040_7.jpg',
+      image: 'http://kagemaru-tozan.cocolog-nifty.com/photos/uncategorized/2014/03/23/bounomine00.jpg',
       area_id: '41',
     }
   ]

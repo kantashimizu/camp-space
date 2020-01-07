@@ -9,6 +9,7 @@
     = csp_meta_tag
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+    %meta{:content => "width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0", :name => "viewport"}/
     %script{async: "", defer: "defer", src: "https://maps.googleapis.com/maps/api/js?key=AIzaSyBF0vYwIgndNfqpvXaYoXmRW9OXfCB_cRs&callback=initMap"}
   %body
     = yield
