@@ -28,9 +28,9 @@ TECH::EXPERTの全カリキュラムが終了し、実際に今までの学習�
 
 <img width="1275" alt="item_show" src="https://user-images.githubusercontent.com/57335336/71829951-05244e00-30e9-11ea-8e93-23f805bf8100.png">
 
-:two: 配送先のキャンプを指定します
+:two: 配送先の登山場所を指定します
 
-![image](https://user-images.githubusercontent.com/57335336/71830480-2a658c00-30ea-11ea-8d0b-6d4aad0f397e.png)
+![image](https://user-images.githubusercontent.com/57335336/71890122-f7250a80-3186-11ea-9375-662ee54634e1.png)
 
 :white_check_mark: カートに入れた商品を確認できます(削除も可)
 
